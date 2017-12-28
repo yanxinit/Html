@@ -6,6 +6,14 @@
     <link rel="stylesheet" type="text/css" href="css/common.css"/>
     <link rel="stylesheet" type="text/css" href="css/slide_show.css"/>
     <script type="text/javascript">
+        var showDropMenu = function () {
+            document.getElementsByClassName("drop_menu").item(0).style.display = "block";
+        }
+
+        var hideDropMenu = function () {
+            document.getElementsByClassName("drop_menu").item(0).style.display = "none";
+        }
+
         window.onload = function () {
             // 定义判断添加删除元素class方法
             var hasClass = function (obj, cls) {
@@ -139,10 +147,21 @@
 <div id="nav">
     <div class="nav_left"><img src="img/logo.jpg"></div>
     <div class="nav_right">
-        <ul>
+        <ul style="vertical-align: top;">
             <li><a class="active_tab" href="#">首页</a></li>
             <li><a href="#">关于智行</a></li>
-            <li><a href="#">产品服务</a></li>
+            <li onmouseover="showDropMenu()" onmouseleave="hideDropMenu()">
+                <a href="#">产品服务</a>
+                <ul class="drop_menu"
+                    style="position: absolute;z-index: 4;background-color: white;border: 1px solid rgba(0,0,0,.15);
+                        box-shadow: 0 6px 12px rgba(0,0,0,.175);padding-bottom: 10px;display: none;">
+                    <li><a href="#">驾培</a></li>
+                    <li><a href="#">智慧公交</a></li>
+                    <li><a href="#">网约车</a></li>
+                    <li><a href="#">货运</a></li>
+                    <li><a href="#">智能管车</a></li>
+                </ul>
+            </li>
             <li><a href="#">新闻资讯</a></li>
             <li><a href="#">客户案例</a></li>
             <li><a href="#">加入智行</a></li>

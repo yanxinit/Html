@@ -11,6 +11,10 @@ body {
     margin: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .clean {
     clear: both;
 }
@@ -45,7 +49,7 @@ body {
     padding-bottom: 50px;
 }
 
-.nav_left, .nav_right, .nav_right ul li {
+.nav_left, .nav_right, .nav_right > ul > li {
     display: inline-block;
     vertical-align: middle;
 }
@@ -58,7 +62,7 @@ body {
     width: 100%;
 }
 
-.nav_right li {
+.nav_right > ul > li {
     padding: 10px;
 }
 
@@ -80,9 +84,13 @@ body {
     color: #2a85e3;;
 }
 
-.nav_right a:hover {
+.drop_menu a:hover, .nav_right a:hover {
     border-bottom: 2px solid #2a85e3;
     color: #2a85e3;;
+}
+
+.drop_menu a {
+    padding: 5px 0 5px 0;
 }
 
 .title {
