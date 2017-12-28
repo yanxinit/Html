@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style type="text/css">
-
+    <style>
+        #product_center > div + div:not(:first-of-type) {
+            background: red;
+        }
     </style>
 </head>
 <body>
-<div style="border:4px solid blue;float: left">
-    <div style="width:200px;border:4px solid red;float:left;">
-        我是浮动元素1
-    </div>
-    <div style="width:200px;border:4px solid yellow;float:left;">
-        我是浮动元素2
+<div>
+    <div id="product_center">
+        <div>
+            <div>231222222222</div>
+        </div>
+        <div>
+            <div>231222222222</div>
+        </div>
+        <div>
+            <div>231222222222</div>
+        </div>
+        <div>
+            <div>231222222222</div>
+        </div>
+        <div>
+            <div>231222222222</div>
+        </div>
+        <div>
+            <div>231222222222</div>
+        </div>
     </div>
 </div>
-<div style="border:4px solid gray;">我是页脚</div>
 </body>
 </html>

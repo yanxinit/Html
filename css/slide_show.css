@@ -1,4 +1,4 @@
-#container {
+#slide_img {
     position: relative;
     overflow: hidden;
 }
@@ -8,7 +8,7 @@
 }
 
 .slidpic {
-    position: absolute;;
+    position: absolute;
     opacity: 0;
 }
 
@@ -25,7 +25,7 @@
     opacity: 1;
 }
 
-#container:hover #buttons {
+#slide_img:hover #buttons {
     display: block;
     visibility: visible;
 }

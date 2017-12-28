@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     margin: 0;
 }
@@ -15,10 +19,26 @@ body {
     margin-right: 30px;
 }
 
-.nav {
-    margin: 20px auto 10px auto;
+#nav, #product_center, .honor_content_container, #partner, #footer {
+    margin: 0 auto 0 auto;
     max-width: 1400px;
     text-align: center;
+}
+
+#nav {
+    margin-top: 30px;
+}
+
+.nav_right {
+    margin-top: 10px;
+}
+
+#partner {
+    max-width: 1000px;
+}
+
+#product_center {
+    padding-bottom: 50px;
 }
 
 .nav_left, .nav_right, .nav_right ul li {
@@ -38,17 +58,96 @@ body {
     padding: 10px;
 }
 
-.nav_right a {
+.nav_right a:not(.active_tab) {
     display: inline-block;
     min-width: 110px;
     line-height: 40px;
     border-bottom: 2px solid transparent;
     font-size: 20px;
-    text-decoration: none;
     color: black;
+}
+
+.active_tab {
+    display: inline-block;
+    min-width: 110px;
+    line-height: 40px;
+    font-size: 20px;
+    border-bottom: 2px solid #2a85e3;
+    color: #2a85e3;;
 }
 
 .nav_right a:hover {
     border-bottom: 2px solid #2a85e3;
     color: #2a85e3;;
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    padding: 50px;
+}
+
+#product_center > div + div:not(:first-child) {
+    display: inline-block;
+}
+
+.float_top_container div {
+    float: top;
+}
+
+.honor_function_item_left {
+    width: 40%;
+    display: inline-block;
+    margin: 50px 50px 0 0;
+}
+
+.honor_function_item_right {
+    width: 40%;
+    display: inline-block;
+    margin: 50px 0 0 50px;
+}
+
+.honor_function_item_left span, .honor_function_item_right span {
+    display: block;
+    padding: 50px 0 50px 0;
+    font-size: 18px;
+}
+
+#partner img {
+    width: 16%;
+}
+
+#footer {
+    padding-top: 50px;
+}
+
+#footer a:not(.link_hint) {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 30px;
+    min-width: 130px;
+}
+
+#footer span {
+    color: white;
+}
+
+#footer_left {
+    vertical-align: top;
+}
+
+.link_hint {
+    color: #949494;
+    font-size: 12px;
+}
+
+#footer > div {
+    display: inline-block;
+}
+
+.divider {
+    width: 1px;
+    height: 250px;
+    background-color: white;
 }

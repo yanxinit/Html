@@ -129,18 +129,18 @@
             }
 
             play();
-            container.onmouseover = stop;
-            container.onmouseout = play;
+            slide_img.onmouseover = stop;
+            slide_img.onmouseout = play;
             imglist[0].parentElement.style.height = window.getComputedStyle(imglist[0]).getPropertyValue('height');
         }
     </script>
 </head>
 <body>
-<div class="nav">
+<div id="nav">
     <div class="nav_left"><img src="img/logo.jpg"></div>
     <div class="nav_right">
         <ul>
-            <li><a href="#">首页</a></li>
+            <li><a class="active_tab" href="#">首页</a></li>
             <li><a href="#">关于智行</a></li>
             <li><a href="#">产品服务</a></li>
             <li><a href="#">新闻资讯</a></li>
@@ -150,22 +150,22 @@
         </ul>
     </div>
 </div>
-<div id="container">
+<div id="slide_img">
     <div id="imglist">
         <div class="slidpic">
-            <a href="img/slide1.jpg" target="_blank"><img src="img/slide1.jpg"/></a>
+            <a href="#" target="_blank"><img src="img/slide1.jpg"/></a>
         </div>
         <div class="slidpic">
-            <a href="img/slide2.png" target="_blank"><img src="img/slide2.png"/></a>
+            <a href="#" target="_blank"><img src="img/slide2.png"/></a>
         </div>
         <div class="slidpic">
-            <a href="img/slide3.jpg" target="_blank"><img src="img/slide3.jpg"/></a>
+            <a href="#" target="_blank"><img src="img/slide3.jpg"/></a>
         </div>
         <div class="slidpic">
-            <a href="img/slide4.jpg" target="_blank"><img src="img/slide4.jpg"/></a>
+            <a href="#" target="_blank"><img src="img/slide4.jpg"/></a>
         </div>
         <div class="slidpic">
-            <a href="img/slide5.jpg" target="_blank"><img src="img/slide5.jpg"/></a>
+            <a href="#" target="_blank"><img src="img/slide5.jpg"/></a>
         </div>
     </div>
     <div id="buttons">
@@ -180,6 +180,145 @@
         <li></li>
     </ul>
 </div>
-
+<div id="product_center">
+    <div class="title">产品中心</div>
+    <div class="float_top_container">
+        <div><a href="#"><img src="img/index_cp1_01.jpg"></a></div>
+        <div><a href="#"><img src="img/index_cp1_04.jpg"></a></div>
+        <div><a href="#"><img src="img/index_cp1_06.jpg"></a></div>
+    </div>
+    <div><img src="img/index_cp1_02.jpg"></div>
+    <div class="float_top_container">
+        <div><a href="#"><img src="img/index_cp1_03.jpg"></a></div>
+        <div><a href="#"><img src="img/index_cp1_05.jpg"></a></div>
+        <div><a href="#"><img src="img/index_cp1_07.jpg"></a></div>
+    </div>
+</div>
+<div id="intelligence_honor">
+    <div style="background-color: #f5f5f5">
+        <div class="honor_content_container">
+            <div class="title" style="padding-bottom: 0">资质荣誉</div>
+            <div class="honor_function_item_left">
+                <div><img src="img/index_zx1.png"></div>
+                <div><span>交通部刘小明副部长莅临公司并对公司产品提出指导性意见</span></div>
+            </div>
+            <div class="honor_function_item_right">
+                <div><img src="img/index_zx2.png"></div>
+                <div><span>交通部总工程师周伟为智行科技颁奖</span></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="honor_content_container">
+            <div class="honor_function_item_left">
+                <div><img src="img/index_zx3.png"></div>
+                <div><span>交通部中国交通通信中心冯泉博士在公司进行技术指导</span></div>
+            </div>
+            <div class="honor_function_item_right">
+                <div><img src="img/index_zx4.png"></div>
+                <div><span>省市交通系统主管领导莅临公司调研指导</span></div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #f5f5f5">
+        <div class="honor_content_container">
+            <div class="honor_function_item_left">
+                <div><img src="img/index_zx5.png"></div>
+                <div><span>已获得高达10余个国家级自主知识产权证书以及多项交通部认证技术</span></div>
+            </div>
+            <div class="honor_function_item_right">
+                <div><img src="img/index_zx6.png"></div>
+                <div><span>荣获“中国互联网交通创业大赛20强”</span></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="honor_content_container">
+            <div class="honor_function_item_left">
+                <div><img src="img/index_zx7.png"></div>
+                <div><span>全国首批获得交通部全面检测认证的计时培训平台及终端</span></div>
+            </div>
+            <div class="honor_function_item_right">
+                <div><img src="img/index_zx8.png"></div>
+                <div><span>荣获“中国互联网交通创业大赛20强</span></div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #f5f5f5">
+        <div class="honor_content_container">
+            <div class="honor_function_item_left">
+                <div><img src="img/index_zx9.png"></div>
+                <div><span>荣获“互联网+交通运输”创新创业大赛优胜奖</span></div>
+            </div>
+            <div class="honor_function_item_right">
+                <div><img src="img/index_zx10.png"></div>
+                <div><span>荣获第二届“中国创翼之星”称号</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="partner">
+    <div class="title">合作伙伴</div>
+    <div>
+        <img src="img/link_1.png">
+        <img src="img/link_2.png">
+        <img src="img/link_3.png">
+        <img src="img/link_4.png">
+        <img src="img/link_5.png">
+        <img src="img/link_6.png">
+        <img src="img/link_7.png">
+        <img src="img/link_8.png">
+        <img src="img/link_9.png">
+        <img src="img/link_10.png">
+        <img src="img/link_11.png">
+        <img src="img/link_12.png">
+        <img src="img/link_13.png">
+        <img src="img/link_14.png">
+        <img src="img/link_15.png">
+        <img src="img/link_16.png">
+        <img src="img/link_17.png">
+        <img src="img/link_18.png">
+    </div>
+</div>
+<div style="background-color: #333">
+    <div id="footer">
+        <div id="footer_left" style="width: 40%;">
+            <div>
+                <a href="#">主页</a>
+                <a href="#">关于智行</a>
+                <a href="#">产品服务</a>
+                <a href="#">新闻资讯</a>
+                <a href="#">客户案例</a>
+                <a href="#">加入智行</a>
+                <a href="#">联系智行</a>
+            </div>
+            <div><a class="link_hint">Copyright©2016-2017洛阳智行科技有限公司</a></div>
+            <div><a class="link_hint">豫ICP备16014409号-2</a></div>
+            <div><a class="link_hint">豫公网安备 41030502000162号</a></div>
+        </div>
+        <div class="divider"></div>
+        <div id="footer_right" style="width: 40%;vertical-align: top;">
+            <div style="text-align: left; padding-left: 30px">
+                <div style="margin-bottom: 30px"><span>联系我们</span></div>
+                <div style="margin-bottom: 30px">
+                    <div style="display: inline-block"><img src="img/tel.png"></div>
+                    <div style="display: inline-block">
+                        <div><span>24小时服务热线</span></div>
+                        <div><span>0379-80887067</span></div>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: inline-block"><img src="img/tel.png"></div>
+                    <div style="display: inline-block">
+                        <div><span>商务合作</span></div>
+                        <div><span>lyzhixingkeji@126.com</span></div>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
