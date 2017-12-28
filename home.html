@@ -29,7 +29,7 @@
             //开始
             var prev = document.getElementById("prev"),
                 next = document.getElementById("next"),
-                imglist = document.getElementById("imglist").getElementsByTagName("div"),
+                imglist = document.querySelectorAll("#imglist > div"),
                 dot = document.getElementById("slidot").getElementsByTagName("li"),
                 n = imglist.length,
                 index = 0,
@@ -153,19 +153,40 @@
 <div id="slide_img">
     <div id="imglist">
         <div class="slidpic">
-            <a href="#" target="_blank"><img src="img/slide1.jpg"/></a>
+            <div><img src="img/slide1.jpg"/></div>
+            <div style="position: absolute;z-index: 4;left: 300px;top: 15%;">
+                <div><img src="img/slide1_1.png"></div>
+                <div style="margin-top: 20px;line-height: 40px;">
+                    <h2 style="color: white">全国首批交通部双过检产品<br>最懂驾校的智能车载计时培训新系统</h2>
+                </div>
+                <div style="margin-top: 30px;">
+                    <h4 style="color: white;line-height: 28px;">
+                        拥有21大功能包括远程管控油电、智能排课教学、精<br>
+                        准定位、历史轨迹、自动语音播报、完美支持交通 运<br>
+                        输部最新发布的《 机动车驾驶员计时培训系统平台计<br>
+                        时终端技术规范 》（交通运输部公告2016年17号）<br>
+                        的要求等， 真正帮助驾校管理者把控教学过程提升学<br>
+                        员学车体验。
+                    </h4>
+                </div>
+                <div style="margin-top:30px;">
+                    <button style="background: transparent;border: white 1px solid;">
+                        <a href="#" style="color: white;padding: 10px;">查看详情</a>
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="slidpic">
-            <a href="#" target="_blank"><img src="img/slide2.png"/></a>
+            <img src="img/slide2.png"/>
         </div>
         <div class="slidpic">
-            <a href="#" target="_blank"><img src="img/slide3.jpg"/></a>
+            <img src="img/slide3.jpg"/>
         </div>
         <div class="slidpic">
-            <a href="#" target="_blank"><img src="img/slide4.jpg"/></a>
+            <img src="img/slide4.jpg"/>
         </div>
         <div class="slidpic">
-            <a href="#" target="_blank"><img src="img/slide5.jpg"/></a>
+            <img src="img/slide5.jpg"/>
         </div>
     </div>
     <div id="buttons">
