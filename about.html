@@ -15,6 +15,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
             integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
             crossorigin="anonymous"></script>
+    <script>
+        var showDropMenu = function () {
+            document.getElementsByClassName("drop_menu").item(0).style.display = "block";
+        }
+
+        var hideDropMenu = function () {
+            document.getElementsByClassName("drop_menu").item(0).style.display = "none";
+        }
+    </script>
 </head>
 <body>
 <div id="nav">
@@ -43,10 +52,66 @@
     </div>
 </div>
 <div class="container-fluid">
-    <div class="row"><img class="img-fluid" src="img/aboutzx_1.png"></div>
-    <div class="row"><img class="img-fluid" src="img/aboutzx_2.jpg"></div>
-    <div class="row"><img class="img-fluid" src="img/aboutzx_4.png"></div>
-    <div class="row"><img class="img-fluid" src="img/aboutzx_5.png"></div>
+    <div class="row">
+        <div><img class="img-fluid" src="img/aboutzx_1.png"></div>
+    </div>
+    <div class="row" style="position: relative">
+        <div><img class="img-fluid" src="img/aboutzx_2.jpg"></div>
+        <div class="col-sm-10 center_horizontal"
+             style="position: absolute;z-index: 3;top: 50%;transform: translateY(-50%)">
+            <div style="text-align: center"><h2 style="color: #222e49;margin-bottom: 30px;">
+                关于智行</h2></div>
+            <div style="background-color: rgba(57,184,227,0.8);padding: 50px">
+                <p class="text_normal_white">
+                    洛阳智行信息技术有限公司位于洛阳国家大学科技园内，是通过洛阳先进制造业集聚区管委会、洛阳国家大学科技园管委会联合评审，与中科院自动化研究所等知名企业一同进驻园区，洛阳市重点扶持和引进的高新科技企业。同时也是国内领先的专注于互联网与物联网技术研发，进行“互联网+智慧交通”运营服务的创新型交通信息化企业。公司深耕交通领域十数年，致力于通过新一代智能终端软硬件和物联网技术及应用，为驾培驾考、客运物流、汽车科技、现代城市交通、智慧出行和城市交通大数据提供高效便捷的解决方案。公司主营业务为软硬件定制研发、系统集成、ITO服务外包，兼具产品策划、方案、设计、开发、生产、推广等全产业链服务。
+                </p>
+                <br>
+                <p class="text_normal_white">
+                    公司注重高端人才的培养和引进，以及先进技术的集成和创新，积极推动校企合作，与多所大学在人才培养、项目合作、技术研发等方面展开合作，探讨人才培养长效机制。公司注重技术创新和产业合作，拥有多款国家级自主知识产权产品以及多项交通部认证技术，并与中国联通、中钢耐火、海康威视、维深康健等多家国内外知名企业进行交流合作，共同推动业内核心技术和业务模式的创新升级。公司荣获交通部“中国交通互联网创业大赛”全国20强奖项，交通部“互联网+交通运输”创新创业大赛优胜奖，中国青年创新创业大赛“创翼之星”奖项，国家大学科技园A类企业等等多个国家级创新创业奖项和称号。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="position: relative;background-color: #f5f5f5">
+        <div class="col-sm-10 center_horizontal" style="padding: 30px">
+            <div style="text-align: center"><h2 style="color: #222e49;">
+                企业文化</h2></div>
+            <div style="text-align: center">
+                <div style="text-align: center;display: inline-block;margin: 80px">
+                    <div><img src="img/aboutzx_3_1.png"></div>
+                    <div style="margin-top: 50px;max-width: 200px"><p class="text_normal_black">
+                        成为一家真正解决社会问题的世界级科技企业！</p></div>
+                </div>
+                <div style="text-align: center;display: inline-block;margin: 80px">
+                    <div><img src="img/aboutzx_3_2.png"></div>
+                    <div style="margin-top: 50px;max-width: 200px"><p class="text_normal_black">
+                        提升中国交通安全管控，让大众出行更安全，更便捷！</p></div>
+                </div>
+                <div style="text-align: center;display: inline-block;margin: 80px">
+                    <div><img src="img/aboutzx_3_3.png"></div>
+                    <div style="margin-top: 50px;max-width: 200px"><p class="text_normal_black">知行合一 智行天下</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="padding-top: 30px;padding-bottom: 50px">
+        <h2 class="center_horizontal" style="color: #222e49;margin: 50px;text-align: center">团队风采</h2>
+        <div style="text-align: center"><img class="img-fluid" src="img/aboutzx_4.png"></div>
+        <p class="center_horizontal text_normal_black" style="margin-top: 30px;max-width: 800px;">
+            智行团队是跨行业人才的强强联合，集合了国内城市交通领域和互联网信息产业的顶尖精英人才，核心成员有国内道路交通领域的顶级专家顾问，拥有十年以上的交通信息化行业工作经验的技术专家以及十年以上的互联网产品研发经验的前BAT技术专家，还有前世界500强企业的运营管理人才。团队产品和研发人员超过50人，是目前河南省内少有的集产品、研发、测试、运维、运营、市场和客服为一体并拥有完整设计、技术和运营体系的团队。
+        </p>
+    </div>
+    <div class="row" style="position: relative">
+        <div><img class="img-fluid" src="img/aboutzx_5.png"></div>
+        <div class="col-sm-10 center_horizontal"
+             style="position: absolute;z-index: 3;top: 50%;transform: translateY(-50%)">
+            <div style="text-align: center"><h2 style="color: white;margin-bottom: 30px;">
+                公司愿景</h2></div>
+            <p class="text_normal_white center_horizontal" style="max-width: 1000px">
+                中国的互联网与物联网技术的发展，中国智造科技创新的力量，中国政府对智慧城市的提升与治理，让我们看到中国交通未来的发展方向，让我们坚定了深耕交通出行——这个与人们生活息息相关领域的决心。智行成立以后收获的荣誉，是对于智行团队的认可，更是打磨；在中原古老大地，在科技新兴之城——洛阳，智行将会把智慧交通领域的新科技、新创意和新尝试展示给世界，将与更多行业资深专家们进行思维的碰撞，将与来自世界各地的行业伙伴进行深入的技术与产品交流，在这些来自行业与市场的多元需求中磨砺与优化，思考如何让产品更具有市场生命力；并坚持开放、合作的心态，以自身的人才优势、技术优势、创新优势，真诚与政府、企业、科研院所、行业机构等多方合作，共同打造面向全行业的协作创新平台，构建业态繁荣的智慧交通产业生态，真正为交通行业的智能化信息化和互联发展提供技术和内容的支持，以互联网思维和创新技术重新激发出整个交通行业的服务活力，更好地服务于大众，这便是智行所追求的企业价值。
+            </p>
+        </div>
+    </div>
 </div>
 <div style="background-color: #333">
     <div id="footer">
