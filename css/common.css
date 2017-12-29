@@ -4,11 +4,17 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+}
+
+ul {
+    margin-bottom: 0 !important;
 }
 
 body {
     margin: 0;
+    font-family: 'Microsoft YaHei', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif !important;
+    line-height: 1 !important;
 }
 
 ul {
@@ -60,6 +66,7 @@ ul {
 
 .nav_left img {
     width: 100%;
+    display: block;
 }
 
 .nav_right > ul > li {
