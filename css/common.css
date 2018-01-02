@@ -7,7 +7,7 @@ a {
     text-decoration: none !important;
 }
 
-ul {
+ul, p {
     margin-bottom: 0 !important;
 }
 
@@ -45,6 +45,13 @@ ul {
     font-size: 18px;
     line-height: 30px;
     font-weight: 600;
+}
+
+.text_normal_weight_light {
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
 }
 
 .text_normal_hint {
@@ -201,4 +208,83 @@ ul {
     width: 1px;
     height: 250px;
     background-color: white;
+}
+
+.news_day {
+    color: rgb(1, 150, 255);
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(1, 150, 255);
+    border-image: initial;
+    border-radius: 5px;
+}
+
+.news_month {
+    color: rgb(1, 150, 255);
+    text-align: center;
+    width: 54px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.index_pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin-top: 80px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.index_pagination li {
+    display: inline;
+}
+
+.index_pagination > li > a {
+    border: 1px solid #999;
+    padding: 8px 12px;
+    color: #505050;
+    margin-left: 7px;
+}
+
+.index_pagination li a:focus, .active {
+    color: #2a85e3 !important;
+    background: #fff !important;
+}
+
+.active_page {
+    color: #fff !important;
+    background-color: #2a85e3 !important;
+    border-color: #2a85e3 !important;
+}
+
+.index_pagination li a:hover {
+    color: #000;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.index_pagination > li > span > input {
+    border: 1px solid #999;
+    text-align: center;
+    padding: 8px 0;
+    margin: -8px 2px;
+    color: #000;
+    background: #fff;
+    border-radius: 0;
+    width: 32px;
+}
+
+.index_pagination > li > button {
+    border: 1px solid #0196ff;
+    text-align: center;
+    padding: 10px 8px;
+    color: #fff;
+    background: #0196ff;
+    border-radius: 0;
+    letter-spacing: 2px;
 }

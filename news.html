@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>知行合一，智行天下</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+            integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
+    <script>
+        var showDropMenu = function () {
+            document.getElementsByClassName("drop_menu").item(0).style.display = "block";
+        }
+
+        var hideDropMenu = function () {
+            document.getElementsByClassName("drop_menu").item(0).style.display = "none";
+        }
+    </script>
+</head>
+<body>
+<div id="nav">
+    <div class="nav_left"><img src="img/logo.jpg"></div>
+    <div class="nav_right">
+        <ul style="vertical-align: top;">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于智行</a></li>
+            <li onmouseover="showDropMenu()" onmouseleave="hideDropMenu()">
+                <a href="#">产品服务</a>
+                <ul class="drop_menu"
+                    style="position: absolute;z-index: 4;background-color: white;border: 1px solid rgba(0,0,0,.15);
+                        box-shadow: 0 6px 12px rgba(0,0,0,.175);padding-bottom: 10px;display: none;">
+                    <li><a href="#">驾培</a></li>
+                    <li><a href="#">智慧公交</a></li>
+                    <li><a href="#">网约车</a></li>
+                    <li><a href="#">货运</a></li>
+                    <li><a href="#">智能管车</a></li>
+                </ul>
+            </li>
+            <li><a class="active_tab" href="#">新闻资讯</a></li>
+            <li><a href="#">客户案例</a></li>
+            <li><a href="#">加入智行</a></li>
+            <li><a href="#">联系智行</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row"><img src="img/zx_news.jpg"></div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8" style="padding: 30px;">
+            <div class="text_normal_weight_light" style="font-size: 35px">新闻资讯</div>
+            <div style="margin-top: 10px;"><img src="img/zx_new_t.png" style="width: 100%"></div>
+            <div class="row" style="border-bottom: 1px dashed #bebebe;padding: 15px 0 15px 0;">
+                <div class="col-sm-1">
+                    <div class="news_day">16</div>
+                    <div class="news_month">06月</div>
+                </div>
+                <div class="col-sm-11" style="padding-left: 40px">
+                    <a href="#">
+                        <p style="color: #222e49; font-size: 22px;">【热烈祝贺】友照和山西省驾驶培训监管服务平台成功对接</p>
+                        <p style="color: #505050; font-size: 18px;line-height: 30px;margin-top: 15px">
+                            为贯彻落实《关于推进机动车驾驶人培训考试制度改革意见》（国办发〔2015〕88号）、《机动车驾驶员计时培训系统平台技术...
+                            <span style="color: #0196ff">[查看更多]</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="border-bottom: 1px dashed #bebebe;padding: 15px 0 15px 0;">
+                <div class="col-sm-1">
+                    <div class="news_day">02</div>
+                    <div class="news_month">06月</div>
+                </div>
+                <div class="col-sm-11" style="padding-left: 40px">
+                    <a href="#">
+                        <p style="color: #222e49; font-size: 22px;">【友照漫画】汽车大保养（jian）</p>
+                        <p style="color: #505050; font-size: 18px;line-height: 30px;margin-top: 15px">
+                            友照（www.youzhaola.com）创立于2016年1月，是全国驾考机构升级服务提供商&一站式互联网学车平台，致力于解决中国4...
+                            <span style="color: #0196ff">[查看更多]</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="border-bottom: 1px dashed #bebebe;padding: 15px 0 15px 0;">
+                <div class="col-sm-1">
+                    <div class="news_day">17</div>
+                    <div class="news_month">05月</div>
+                </div>
+                <div class="col-sm-11" style="padding-left: 40px">
+                    <a href="#">
+                        <p style="color: #222e49; font-size: 22px;">【重大消息】友照云驾校计时平台和终端均已通过交通部全面检测认证</p>
+                        <p style="color: #505050; font-size: 18px;line-height: 30px;margin-top: 15px">
+                            产品√符合国家驾考改革政策√符合交通部《机动车驾驶员计时培训系统平台技术规范》√符合交通部《机动车驾驶员计时培训...
+                            <span style="color: #0196ff">[查看更多]</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="border-bottom: 1px dashed #bebebe;padding: 15px 0 15px 0;">
+                <div class="col-sm-1">
+                    <div class="news_day">16</div>
+                    <div class="news_month">05月</div>
+                </div>
+                <div class="col-sm-11" style="padding-left: 40px">
+                    <a href="#">
+                        <p style="color: #222e49; font-size: 22px;">热烈庆贺新乡市智慧驾培及计时培训宣贯会圆满召开</p>
+                        <p style="color: #505050; font-size: 18px;line-height: 30px;margin-top: 15px">
+                            2017年5月12日上午9点整，新乡市智慧驾培及计时培训宣贯会在新乡市举行。本次会议由新乡市机动车驾驶员培训协会组织，洛...
+                            <span style="color: #0196ff">[查看更多]</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="border-bottom: 1px dashed #bebebe;padding: 15px 0 15px 0;">
+                <div class="col-sm-1">
+                    <div class="news_day">12</div>
+                    <div class="news_month">05月</div>
+                </div>
+                <div class="col-sm-11" style="padding-left: 40px">
+                    <a href="#">
+                        <p style="color: #222e49; font-size: 22px;">【友照漫画】第一次</p>
+                        <p style="color: #505050; font-size: 18px;line-height: 30px;margin-top: 15px">
+                            友照（www.youzhaola.com）创立于2016年1月，是全国驾考机构升级服务提供商&一站式互联网学车平台，致力于解决中国4...
+                            <span style="color: #0196ff">[查看更多]</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="border-bottom: 1px dashed #bebebe;padding: 15px 0 15px 0;">
+                <div class="col-sm-1">
+                    <div class="news_day">12</div>
+                    <div class="news_month">05月</div>
+                </div>
+                <div class="col-sm-11" style="padding-left: 40px">
+                    <a href="#">
+                        <p style="color: #222e49; font-size: 22px;">【友照漫画】我不是托雷托，我不会漂移</p>
+                        <p style="color: #505050; font-size: 18px;line-height: 30px;margin-top: 15px">
+                            友照（www.youzhaola.com）创立于2016年1月，是全国驾考机构升级服务提供商&一站式互联网学车平台，致力于解决中国4...
+                            <span style="color: #0196ff">[查看更多]</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="index_pagination">
+                <li><a class="active_page" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li>
+                    <a href="#" style="padding-left:4px;padding-right:4px;">
+                        下一页
+                        <img src="img/r.png">
+                    </a>
+                </li>
+                <li><span style="border: 1px solid #999;padding: 8px 12px;margin-left: 7px;">共3页17条</span></li>
+                <li><span style="margin-left: 16px;">到第<input type="text" value="1">页</span>
+                </li>
+                <li>
+                    <button>
+                        &nbsp;确定&nbsp;
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-4">
+            <div style="padding-top: 70px">
+                <div class="text_normal_weight_light" style="font-size: 24px">热点内容</div>
+                <div style="border-bottom: 1px solid #999;padding: 10px 0 10px 0">
+                    <p style="line-height:30px">热烈庆贺新乡市智慧驾培及计时培训宣贯会圆满召开</p>
+                    <p style="margin-top: 10px">2017-05-16</p>
+                </div>
+                <div style="border-bottom: 1px solid #999;padding: 10px 0 10px 0">
+                    <p style="line-height:30px">【重大消息】友照云驾校计时平台和终端均已通过交通部全面检测认证</p>
+                    <p style="margin-top: 10px">2017-05-17</p>
+                </div>
+                <div style="border-bottom: 1px solid #999;padding: 10px 0 10px 0">
+                    <p style="line-height:30px">交通部刘小明副部长莅临洛阳国家大学科技园参观考察，并对洛阳智行公司的工作进行了指导</p>
+                    <p style="margin-top: 10px">2016-09-27</p>
+                </div>
+                <div style="border-bottom: 1px solid #999;padding: 10px 0 10px 0">
+                    <p style="line-height:30px">教你快速玩转友照计时培训</p>
+                    <p style="margin-top: 10px">2017-03-24</p>
+                </div>
+                <div style="border-bottom: 1px solid #999;padding: 10px 0 10px 0">
+                    <p style="line-height:30px">漫画解读：计时培训模式热点问题</p>
+                    <p style="margin-top: 10px">2017-03-24</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="background-color: #333">
+    <div id="footer">
+        <div id="footer_left" style="width: 40%;">
+            <div>
+                <a href="#">主页</a>
+                <a href="#">关于智行</a>
+                <a href="#">产品服务</a>
+                <a href="#">新闻资讯</a>
+                <a href="#">客户案例</a>
+                <a href="#">加入智行</a>
+                <a href="#">联系智行</a>
+            </div>
+            <div><a class="link_hint" href="#">Copyright©2016-2017洛阳智行科技有限公司</a></div>
+            <div><a class="link_hint" href="#">豫ICP备16014409号-2</a></div>
+            <div><a class="link_hint" href="#">豫公网安备 41030502000162号</a></div>
+        </div>
+        <div class="divider"></div>
+        <div id="footer_right" style="width: 40%;vertical-align: top;">
+            <div style="text-align: left; padding-left: 30px;display:inline-block">
+                <div style="margin-bottom: 30px"><span>联系我们</span></div>
+                <div style="margin-bottom: 30px">
+                    <div style="display: inline-block;vertical-align: middle"><img src="img/tel.png"></div>
+                    <div style="display: inline-block;vertical-align: middle">
+                        <div><span>24小时服务热线</span></div>
+                        <div><span>0379-80887067</span></div>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: inline-block;vertical-align: middle"><img src="img/tel.png"></div>
+                    <div style="display: inline-block;vertical-align: middle">
+                        <div><span>商务合作</span></div>
+                        <div><span>lyzhixingkeji@126.com</span></div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: inline-block;margin-left: 20px;vertical-align: top;margin-top: 40px;">
+                <img src="img/ewm.png">
+            </div>
+            <div style="display: inline-block;margin-left: 20px;text-align: left;vertical-align: top;margin-top: 40px;">
+                <img src="img/weixin.png">
+                <div><span>智行科技微信公众号</span></div>
+                <div><span>了解最新动态及品牌案例<br>发掘品牌背后的无限价值</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
