@@ -40,6 +40,19 @@ ul {
     line-height: 30px;
 }
 
+.text_normal_weight {
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.text_normal_hint {
+    color: #868686;
+    font-size: 18px;
+    line-height: 30px;
+}
+
 .clean {
     clear: both;
 }
