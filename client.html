@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>知行合一，智行天下</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+            integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+            integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
+    <script>
+        var showDropMenu = function () {
+            document.getElementsByClassName("drop_menu").item(0).style.display = "block";
+        }
+
+        var hideDropMenu = function () {
+            document.getElementsByClassName("drop_menu").item(0).style.display = "none";
+        }
+    </script>
+</head>
+<body>
+<div id="nav">
+    <div class="nav_left"><img src="img/logo.jpg"></div>
+    <div class="nav_right">
+        <ul style="vertical-align: top;">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于智行</a></li>
+            <li onmouseover="showDropMenu()" onmouseleave="hideDropMenu()">
+                <a href="#">产品服务</a>
+                <ul class="drop_menu"
+                    style="position: absolute;z-index: 4;background-color: white;border: 1px solid rgba(0,0,0,.15);
+                        box-shadow: 0 6px 12px rgba(0,0,0,.175);padding-bottom: 10px;display: none;">
+                    <li><a href="#">驾培</a></li>
+                    <li><a href="#">智慧公交</a></li>
+                    <li><a href="#">网约车</a></li>
+                    <li><a href="#">货运</a></li>
+                    <li><a href="#">智能管车</a></li>
+                </ul>
+            </li>
+            <li><a href="#">新闻资讯</a></li>
+            <li><a class="active_tab" href="#">客户案例</a></li>
+            <li><a href="#">加入智行</a></li>
+            <li><a href="#">联系智行</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <img src="img/cases_1.png">
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container">
+        <p style="font-size: 35px;color: #222e49;text-align: center;margin-top: 50px;">智慧医疗行业案例</p>
+        <div style="border-bottom: 2px solid #e5e5e5;margin-top: 40px;margin-bottom: 50px;"></div>
+        <div class="row" style="padding-bottom: 80px;display: flex;justify-content: center;align-items: center">
+            <div class="col-sm-4">
+                <img src="img/cases_2_l.png">
+            </div>
+            <div class="col-sm-8">
+                <img src="img/cases_2_r.png" style="width: 100%;">
+                <p class="client_content">
+                    佰龄医生是慢性病风险防控一站式管理平台，以预防和慢性病管理为主旨，通过专业的健康管理服务对客户个人的健康状况有持续全面的了解，建立健康档案，提供远程会诊、私人医生、慢性病管理、商城、膳食管理等贴心功能，通过大数据和移动互联网实现O2O医疗服务，以提高和改善人们的生活质量和生命质量为目的，促使互联网医疗服务从“连接人与信息”到“连接人与服务”迁移。
+                </p>
+                <p style="margin-top: 20px">
+                    <span class="client_content_title font-weight-bold">开发类型：</span>
+                    <span class="client_content">微信端、医生管理后台</span>
+                </p>
+                <p>
+                    <span class="client_content_title font-weight-bold">项目功能：</span>
+                    <span class="client_content">远程会诊、私人医生、慢病管理、商城、膳食管理等</span>
+                </p>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 80px;display: flex;justify-content: center;align-items: center">
+            <div class="col-sm-8">
+                <img src="img/cases_3_l.png" style="width: 100%;">
+                <p class="client_content">
+                    云糖医医疗平台是一个具有血糖智能监测、风险评估、专家在线咨询、饮食指导、运动指导、查看病例、新闻阅读、行业会议等个性化服务的专业化管理平台，运用最先进的移动互联网、大数据等技术，倾力打造了“云糖医”患者APP、医生APP、管理后台，整合线上线下资源，逐步改变中国糖尿病的管理现状。
+                </p>
+                <p style="margin-top: 20px">
+                    <span class="client_content_title font-weight-bold">开发类型：</span>
+                    <span class="client_content">医生端APP、患者端APP、云糖医后台</span>
+                </p>
+                <p>
+                    <span class="client_content_title font-weight-bold">项目功能：</span>
+                    <span class="client_content">血糖记录、医患沟通、查看病例、新闻阅读、行业会议等</span>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/cases_3_r.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: #f5f5f5;padding-top: 50px;padding-bottom: 50px">
+    <div class="container">
+        <p style="font-size: 35px;color: #222e49;text-align: center;">智慧服务行业案例</p>
+        <p class="client_content" style="text-align: center;margin-top: 50px;">
+            随着服务行业竞争的加剧，涉及到娱乐KTV、旅行社、物业社区、旅游景区、酒店餐饮、超市百货、家居家装、金融银行、汽车服务、洗浴中心等诸多领域，市场日趋饱和，粗放式管理的缺陷日益暴露，导致服务行业企业利润不同程度的下滑，要想满足服务行业客户个性化的需求，适应未来的发展，实现提高管理效率，降低运营成本，扩大收益的目标，我公司针对服务行业管理难问题，提供一整套信息化解决方案。
+        </p>
+        <div style="border-bottom: 2px solid #e5e5e5;margin-top: 40px;margin-bottom: 50px;"></div>
+        <div class="row" style="display: flex;justify-content: center;align-items: center;">
+            <div class="col-sm-4 text-center"><img src="img/cases_4_l.png" style="height: 360px"></div>
+            <div class="col-sm-8">
+                <div class="row" style="display: flex;justify-content: center;align-items: center;">
+                    <div class="col-sm-2 text-center"><img src="img/cases_4_1.png"></div>
+                    <div class="col-sm-2 client_content_title">云Ｋ吧</div>
+                    <div class="col-sm-8 client_content">多平台任性分享、地图导航、服务项目展示、营销活动展示、广告合作等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_4_2.png"></div>
+                    <div class="col-sm-2 client_content_title">机构官网PC</div>
+                    <div class="col-sm-8 client_content">套餐价位展示、营销活动、在线沟通预约、在线订单支付、广告合作等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_4_3.png"></div>
+                    <div class="col-sm-2 client_content_title">经理端</div>
+                    <div class="col-sm-8 client_content">可实现分店管理、客户信息管理、人事管理、车辆管理、资金管理等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_4_4.png"></div>
+                    <div class="col-sm-2 client_content_title">员工端</div>
+                    <div class="col-sm-8 client_content">考勤打卡、点单结账、营销活动推广会员顾客跟踪回访、查看工资明细等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_4_5.png"></div>
+                    <div class="col-sm-2 client_content_title">客户端</div>
+                    <div class="col-sm-8 client_content">查店面位置、一键导航、停车位信息导航、网上点单、多种方式支付等</div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 70px">
+            <div class="col-sm-8">
+                <div class="row" style="display: flex;justify-content: center;align-items: center;">
+                    <div class="col-sm-2 text-center"><img src="img/cases_4_6.png"></div>
+                    <div class="col-sm-2 client_content_title">旅游吧</div>
+                    <div class="col-sm-8 client_content">多平台任性分享、地图导航、精品景点介绍、营销活动展示、广告合作等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_4_7.png"></div>
+                    <div class="col-sm-2 client_content_title">机构官网PC</div>
+                    <div class="col-sm-8 client_content">特色路线展示、营销活动、酒店在线预约、在线订单支付、广告合作等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_4_8.png"></div>
+                    <div class="col-sm-2 client_content_title">经理端</div>
+                    <div class="col-sm-8 client_content">旅游线路管理、安全保险管理、人事管理、车辆管理、资金管理等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_4_9.png"></div>
+                    <div class="col-sm-2 client_content_title">员工端</div>
+                    <div class="col-sm-8 client_content">考勤打卡、旅游知识、热门线路推广会员顾客跟踪回访、查看工资明细等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_4_10.png"></div>
+                    <div class="col-sm-2 client_content_title">客户端</div>
+                    <div class="col-sm-8 client_content">查景区位置、一键导航、停车位信息导航、自主预约、多种方式支付等</div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center"><img src="img/cases_5_r.png" style="height: 360px"></div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="padding-top: 50px;padding-bottom: 50px">
+    <div class="container">
+        <p style="font-size: 35px;color: #222e49;text-align: center;">智慧培训行业案例</p>
+        <p class="client_content" style="text-align: center;margin-top: 50px;">
+            目前中国教育培训行业速度发展，涉及到学历学位教育、幼儿教育、外语、金融、市场类职业培训、健身体能培训、兴趣特长培训等诸多领域。各种教育培训机构迅速成长占领市场，但由于没有标准化专业化的管理系统，导致出现诸多问题，如人员管理混乱、排课不合理、考勤制度不完善、财务管理账目不清晰、营销招生难等。无论是从前端宣传和销售的互联网化，还是后续课程内容的整合提升，都面临着外部竞争加剧，内部业务流转效率低下的类似问题，我公司针对教育培训机构的管理难问题，提供解决方案。
+        </p>
+        <div style="border-bottom: 2px solid #e5e5e5;margin-top: 40px;margin-bottom: 50px;"></div>
+        <div class="row" style="display: flex;justify-content: center;align-items: center;">
+            <div class="col-sm-4 text-center"><img src="img/cases_6_l.png" style="height: 360px"></div>
+            <div class="col-sm-8">
+                <div class="row" style="display: flex;justify-content: center;align-items: center;">
+                    <div class="col-sm-2 text-center"><img src="img/cases_5_1.png"></div>
+                    <div class="col-sm-2 client_content_title">微学吧</div>
+                    <div class="col-sm-8 client_content">多平台任性分享、机构展示、课程培训展示、招生管理、营销活动展示等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_5_2.png"></div>
+                    <div class="col-sm-2 client_content_title">机构官网PC</div>
+                    <div class="col-sm-8 client_content">精品课程展示、招生管理、在线沟通在线支付、广告合作、教师风采等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_5_3.png"></div>
+                    <div class="col-sm-2 client_content_title">校长端</div>
+                    <div class="col-sm-8 client_content">分校管理、课程营销管理、教师管理学员管理、车辆管理、财务管理等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_5_4.png"></div>
+                    <div class="col-sm-2 client_content_title">教师端</div>
+                    <div class="col-sm-8 client_content">考勤打卡、学员管理、课程设置、在线沟通、营销活动推广等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_5_5.png"></div>
+                    <div class="col-sm-2 client_content_title">学员端</div>
+                    <div class="col-sm-8 client_content">在线沟通、自主择课、选择一对一或一对多教育模式、多种支付方式等</div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 70px">
+            <div class="col-sm-8">
+                <div class="row" style="display: flex;justify-content: center;align-items: center;">
+                    <div class="col-sm-2 text-center"><img src="img/cases_5_6.png"></div>
+                    <div class="col-sm-2 client_content_title">健身吧</div>
+                    <div class="col-sm-8 client_content">多平台任性分享、私教展示、学员互动、营销活动展示、环境设施展示等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_5_7.png"></div>
+                    <div class="col-sm-2 client_content_title">机构官网PC</div>
+                    <div class="col-sm-8 client_content">机构信息展示、私教课程展示、营销活动、沟通预约支付、广告合作等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_5_8.png"></div>
+                    <div class="col-sm-2 client_content_title">经理端</div>
+                    <div class="col-sm-8 client_content">可实现分店管理、健身器械管理、学员管理、人事管理、财务管理等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_5_9.png"></div>
+                    <div class="col-sm-2 client_content_title">私教端</div>
+                    <div class="col-sm-8 client_content">考勤打卡、学员管理、课程设置、健身营养餐建议、营销活动推广等</div>
+                </div>
+                <div class="row" style="display: flex;justify-content: center;align-items: center;margin-top: 15px">
+                    <div class="col-sm-2 text-center"><img src="img/cases_5_10.png"></div>
+                    <div class="col-sm-2 client_content_title">学员端</div>
+                    <div class="col-sm-8 client_content">在线沟通、网上预约培训、健身小贴士、健身管理、多种支付方式等</div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center"><img src="img/cases_7_l.png" style="height: 360px"></div>
+        </div>
+    </div>
+</div>
+<div style="background-color: #333">
+    <div id="footer">
+        <div id="footer_left" style="width: 40%;">
+            <div>
+                <a href="#">主页</a>
+                <a href="#">关于智行</a>
+                <a href="#">产品服务</a>
+                <a href="#">新闻资讯</a>
+                <a href="#">客户案例</a>
+                <a href="#">加入智行</a>
+                <a href="#">联系智行</a>
+            </div>
+            <div><a class="link_hint" href="#">Copyright©2016-2017洛阳智行科技有限公司</a></div>
+            <div><a class="link_hint" href="#">豫ICP备16014409号-2</a></div>
+            <div><a class="link_hint" href="#">豫公网安备 41030502000162号</a></div>
+        </div>
+        <div class="divider"></div>
+        <div id="footer_right" style="width: 40%;vertical-align: top;">
+            <div style="text-align: left; padding-left: 30px;display:inline-block">
+                <div style="margin-bottom: 30px"><span>联系我们</span></div>
+                <div style="margin-bottom: 30px">
+                    <div style="display: inline-block;vertical-align: middle"><img src="img/tel.png"></div>
+                    <div style="display: inline-block;vertical-align: middle">
+                        <div><span>24小时服务热线</span></div>
+                        <div><span>0379-80887067</span></div>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: inline-block;vertical-align: middle"><img src="img/tel.png"></div>
+                    <div style="display: inline-block;vertical-align: middle">
+                        <div><span>商务合作</span></div>
+                        <div><span>lyzhixingkeji@126.com</span></div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: inline-block;margin-left: 20px;vertical-align: top;margin-top: 40px;">
+                <img src="img/ewm.png">
+            </div>
+            <div style="display: inline-block;margin-left: 20px;text-align: left;vertical-align: top;margin-top: 40px;">
+                <img src="img/weixin.png">
+                <div><span>智行科技微信公众号</span></div>
+                <div><span>了解最新动态及品牌案例<br>发掘品牌背后的无限价值</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

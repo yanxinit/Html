@@ -281,3 +281,14 @@ ul {
     border-radius: 0;
     letter-spacing: 2px;
 }
+
+.client_content {
+    color: #868686;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.client_content_title {
+    font-size: 20px;
+    line-height: 30px;
+}
