@@ -217,9 +217,7 @@ ul {
     text-align: center;
     font-size: 24px;
     line-height: 50px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(1, 150, 255);
+    border: 2px solid rgb(1, 150, 255);
     border-image: initial;
     border-radius: 5px;
 }
@@ -249,11 +247,6 @@ ul {
     padding: 8px 12px;
     color: #505050;
     margin-left: 7px;
-}
-
-.index_pagination li a:focus, .active {
-    color: #2a85e3 !important;
-    background: #fff !important;
 }
 
 .active_page {
